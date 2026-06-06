@@ -1,0 +1,56 @@
+# depslib dependency file v1.0
+1780780268 source:c:\users\benja\desktop\tpconcurrente\semaforo.cpp
+	"Semaforo.h"
+	<chrono>
+
+1780780268 c:\users\benja\desktop\tpconcurrente\semaforo.h
+	<mutex>
+	<condition_variable>
+
+1780766283 source:c:\users\benja\desktop\tpconcurrente\sistemalogistico.cpp
+	"SistemaLogistico.h"
+	<chrono>
+
+1780766307 c:\users\benja\desktop\tpconcurrente\sistemalogistico.h
+	<deque>
+	"Paquete.h"
+	"Semaforo.h"
+
+1780766291 c:\users\benja\desktop\tpconcurrente\paquete.h
+
+1780780092 source:c:\users\benja\desktop\tpconcurrente\consumidor.cpp
+	"Consumidor.h"
+	<thread>
+	<chrono>
+
+1780780268 c:\users\benja\desktop\tpconcurrente\consumidor.h
+	"SistemaLogistico.h"
+
+1780780287 source:c:\users\benja\desktop\tpconcurrente\main.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+	"Pruebas.h"
+
+1780766299 c:\users\benja\desktop\tpconcurrente\pruebas.h
+	<string>
+
+1780780268 source:c:\users\benja\desktop\tpconcurrente\productor.cpp
+	"Productor.h"
+	<thread>
+	<cstdlib>
+	<chrono>
+
+1780766295 c:\users\benja\desktop\tpconcurrente\productor.h
+	"SistemaLogistico.h"
+
+1780780268 source:c:\users\benja\desktop\tpconcurrente\pruebas.cpp
+	"Pruebas.h"
+	"SistemaLogistico.h"
+	"Productor.h"
+	"Consumidor.h"
+	<iostream>
+	<thread>
+	<vector>
+	<chrono>
+
