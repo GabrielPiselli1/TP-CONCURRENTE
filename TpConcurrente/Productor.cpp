@@ -6,10 +6,10 @@
 void productor(SistemaLogistico& sistema,int cantidad){
     for(int i = 0; i < cantidad; i++){
         Paquete p;
-        p.tiempoCreacion = obtenerTiempoMs();
-        
+        p.tiempoCreacion = obtenerTiempoMs(); 
         p.prioridad = rand() % 2;
-            sistema.mutexID.wait();
+        
+        sistema.mutexID.wait();
             sistema.generadorID++;
             p.id = sistema.generadorID;
             sistema.paquetesProducidos++;
@@ -26,11 +26,11 @@ void productor(SistemaLogistico& sistema,int cantidad){
 }
 
 void productorPrioridadFija(SistemaLogistico& sistema,int cantidad,int prioridad){
-    for(int i = 0; i < cantidad; i++)
-    {
+    for(int i = 0; i < cantidad; i++){
         Paquete p;
         p.tiempoCreacion = obtenerTiempoMs();
         p.prioridad = prioridad;
+        
         sistema.mutexID.wait();
             sistema.generadorID++;
             p.id = sistema.generadorID;
